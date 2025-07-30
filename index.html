@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        .heart{
+            width: 100px;
+            height: 90px;
+            position: relative;
+            background: red;
+            transform: rotate(-45deg);
+            margin: 50px auto;
+        }
+        .heart::before,
+        .heart::after{
+            content: "";
+            width: 100px;
+            height: 90px;
+            position: absolute;
+            background: red;
+            border-radius: 50px;
+        }
+        .heart::before{
+            top: -50px;
+            left: 0;
+        }.heart::after{
+            left: 50px;
+            top: 0;
+        }
+        .img{
+            width: 200px;
+            height: 300px;
+            size: 200px;
+            border: 20px solid skyblue;
+            display: block;
+            margin: auto;
+        }
+        .h1{
+            text-align: center;
+            color: skyblue;
+            size: 15px; 
+        }
+        .song{
+            text-align: center;
+            display: block;
+            margin: auto;
+            color: rgb(43, 144, 226);
+        }
+    </style>
+</head>
+<body style="background-color: pink;">
+    <div class="heart"></div>
+    <h1 class="h1">I LOVE YOU SO MUCH DARLING</h1>
+    <br>
+    <img class="img" src="image/photo_2025-05-14_22-35-55.jpg">
+    <br>
+    <a class="song" href="home.html"><button type="button" class="song">Please Click This My LOVE</button></a>
+    <br>
+    <img style="display: block;margin: auto;" src="image/be946f4a7dc707d55af98fc8e8d9d6bb.gif" alt="">
+</body>
+</html>
